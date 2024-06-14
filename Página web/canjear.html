@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/canjear.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canjear Premios</title>
+</head>
+<body>
+    <header>
+        <h1>Canjear Premios</h1>
+    </header>
+
+    <div class="form-container">
+        <form id="donacionForm">
+            <label for="tipoMaterial">Tipo de material a donar:</label>
+            <select id="tipoMaterial" name="tipoMaterial" required>
+                <option value="Papel">Papel</option>
+                <option value="Plástico">Plástico</option>
+                <option value="Vidrio">Vidrio</option>
+                <option value="Metal">Metal</option>
+            </select><br>
+
+            <label for="cantidadKilos">Cantidad en kilos:</label>
+            <input type="number" id="cantidadKilos" name="cantidadKilos" min="1" step="1" required><br>
+
+            <input type="submit" value="Donar Material">
+        </form>
+
+        <div id="resultadoPuntos">
+            <p>Puntos obtenidos en esta donación: <span id="puntosObtenidos">0</span></p>
+            <p>Puntos totales: <span id="puntosTotales">0</span></p>
+        </div>
+
+        <div id="seleccionPremio">
+            <label for="tipoPremio">Selecciona el premio que deseas canjear:</label>
+            <select id="tipoPremio" name="tipoPremio">
+                <option value="1">Premio Ecológico - 10 puntos</option>
+                <option value="2">Kit de Reciclaje - 20 puntos</option>
+                <option value="3">Cupón de Descuento en Tienda Ecológica - 30 puntos</option>
+                <option value="4">Eco-Taza Reutilizable - 15 puntos</option>
+                <option value="5">Libreta Reciclada - 5 puntos</option>
+            </select><br>
+
+            <button id="btnCanjear" onclick="canjearPremio()" disabled>Canjear Premio</button>
+        </div>
+
+        <div id="premiosCanjeados">
+            <h2>Premios Canjeados:</h2>
+            <ul id="listaPremios"></ul>
+        </div>
+
+        <button onclick="regresarAlMenu()" class="btn-regresar">Regresar al Menú</button>
+        
+    </div>
+    
+   
+
+    <footer>
+        <p>Derechos reservados</p>
+    </footer>
+
+    <script src="js/canjear.js"></script>
+</body>
+</html>
+
+
+

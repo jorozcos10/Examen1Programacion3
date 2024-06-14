@@ -1,0 +1,119 @@
+/* CSS para canjear.html */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.btn-regresar {
+    background-color: red; /* Cambiado a rojo */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-regresar:hover {
+    background-color: darkred; /* Rojo más oscuro al hacer hover */
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+button {
+    width: 100%;
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #36648b; /* Azul más oscuro al hacer hover */
+}
+
+footer {
+    background-color: rgba(70, 130, 180, 0.9); /* steelblue con opacidad */
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.9em;
+}
+
+#premiosCanjeados {
+    margin-top: 20px;
+}
+
+#premiosCanjeados h2 {
+    margin-top: 0;
+}
+
+#premiosCanjeados button {
+    background-color: red; /* Color rojo para el botón */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#premiosCanjeados button:hover {
+    background-color: darkred; /* Rojo más oscuro al hacer hover */
+}

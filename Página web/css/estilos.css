@@ -1,0 +1,127 @@
+/* CSS Estilos para el index*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('../img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #f0f0f0; /* Color de fondo por defecto */
+}
+
+header img {
+    padding-top: 0.5em;
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: rgba(70, 130, 180, 0.9); /* steelblue con opacidad */
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: #FFF;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: tomato;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+section {
+    flex: 0 1 60%;
+    margin-right: 0.5em;
+}
+
+article {
+    border: 1px solid #CCC;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article p {
+    text-align: justify;
+    margin-bottom: 10px; /* Espacio entre el párrafo y la lista */
+}
+
+article ul {
+    padding-left: 20px; /* Ajusta el espacio entre el borde izquierdo y los puntos */
+}
+
+article li {
+    margin-bottom: 5px; /* Espacio entre cada elemento de la lista */
+}
+
+article h1,
+article h2 {
+    text-align: center; /* Centrar los títulos */
+}
+
+aside {
+    flex: 0 1 35%;
+    background-color: rgba(247, 247, 247, 0.9); /* Fondo gris claro con opacidad */
+    padding: 1em;
+    margin-top: 0.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+aside img {
+    width: 100%;
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+.aside-content {
+    margin-bottom: 10px; /* Espacio entre el texto y la imagen */
+}
+
+
+aside h2 {
+    text-align: center; /* Centrar el título */
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+
+aside p {
+    margin-top: 10px; /* Espacio entre el título y el párrafo */
+}
+
+footer {
+    background-color: rgba(70, 130, 180, 0.9); /* steelblue con opacidad */
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.9em;
+}

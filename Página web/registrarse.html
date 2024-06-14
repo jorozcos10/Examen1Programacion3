@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/registrarse.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+</head>
+<body>
+    <header>
+        <h1>Registrarse</h1>
+    </header>
+
+    <div class="registro-form">
+        <form id="registroForm">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="direccion">Dirección:</label><br>
+            <input type="text" id="direccion" name="direccion" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" required><br>
+
+            <label for="password">Contraseña:</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+            <input type="submit" value="Registrarse" class="btn">
+        </form>
+
+        <!-- Botón para regresar al índice -->
+        <button onclick="regresarAlMenu()" class="btn-regresar">Regresar al Menú</button>
+    </div>
+
+    <div id="informacionUsuario" class="hidden"></div> <!-- Contenedor oculto para la información del usuario -->
+
+    <footer>
+        <p>Derechos reservados</p>
+    </footer>
+
+    <script src="js/registrar.js"></script>
+</body>
+</html>
